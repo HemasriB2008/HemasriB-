@@ -1,0 +1,23 @@
+#include <studio.h>
+int main()
+{
+    int questions, time, submitted;
+    printfs("Questions Answered:");
+    scanf("%d", &questions);
+
+    printf("Remaining Time:");
+    scanf("%d", &time);
+
+    printf("Already Submitted (1 for Yes, 0 for No):");
+    scanf("%d", &submitted);
+
+    if (questions >= 1 && time > 0 && submitted == 0)
+    {
+        printf("Submission Allowed");
+    }
+    else
+    {
+        printf("Submission Not Allowed");
+    }
+    return 0;
+}
